@@ -1,0 +1,125 @@
+.testimony {
+  margin-top: 50px;
+}
+.testimony-title > h3 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  color: #03293c;
+}
+.testimony-slider {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 28px;
+}
+.testimony-box {
+  margin-bottom: 50px;
+}
+.testimony-box > h2 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 20px;
+  text-align: center;
+  color: #000000;
+}
+.testimony-box > p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  display: flex;
+  align-items: flex-end;
+  color: #03293c;
+  margin: 20px 0;
+}
+.testimony-box > h3 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.015em;
+  color: #03293c;
+}
+.testimony-slider .swiper-pagination-bullet {
+  width: 11px;
+  height: 11px;
+  background: #c4c4c4;
+  margin: 0 12px !important;
+}
+
+.testimony-slider .swiper-pagination-bullet-active {
+  background: #e84e18;
+}
+
+@media screen and (min-width: 768px) {
+  .testimony {
+    width: 60%;
+    margin: 100px auto 0;
+  }
+  .testimony-title > h3 {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .testimony-slider {
+    margin-top: 50px;
+  }
+  .testimony-box {
+    margin-bottom: 80px;
+  }
+  .testimony-box > h2 {
+    font-size: 22px;
+    line-height: 24px;
+  }
+  .testimony-box > p {
+    font-size: 16px;
+    line-height: 20px;
+    margin: 30px 0;
+  }
+  .testimony-box > h3 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .testimony-slider .swiper-pagination-bullet {
+    width: 15px;
+    height: 15px;
+    margin: 0 15px !important;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .testimony {
+    width: 50%;
+    margin: 120px auto 0;
+  }
+  .testimony-title > h3 {
+    font-size: 18px;
+    line-height: 23px;
+  }
+  .testimony-slider {
+    margin-top: 100px;
+  }
+  .testimony-box {
+    margin-bottom: 80px;
+  }
+  .testimony-box > h2 {
+    font-size: 42px;
+    line-height: 48px;
+  }
+  .testimony-box > p {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 30px 0;
+  }
+  .testimony-box > h3 {
+    font-size: 26px;
+    line-height: 28px;
+  }
+}

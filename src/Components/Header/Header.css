@@ -1,0 +1,119 @@
+.header {
+  z-index: 10;
+  position: absolute;
+  width: 100%;
+  padding: 0 10%;
+  top: 36px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.brand > h2 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 23px;
+  color: #fff;
+}
+.menu-icon {
+  z-index: inherit;
+  display: flex;
+  align-items: center;
+}
+.menu-icon > img {
+  width: 25px;
+  height: 20.45px;
+}
+.menu-mobile {
+  z-index: 10;
+  position: absolute;
+  top: -36px;
+  right: 0;
+  width: 190px;
+  height: 380px;
+  background: #03293c;
+}
+.menu-mobile-icon {
+  width: 70%;
+  margin: 32px auto;
+  display: flex;
+  justify-content: right;
+}
+.menu-mobile-icon > img {
+  width: 27.76px;
+  height: 22.04px;
+}
+.menu-items {
+  padding: 0 20px;
+}
+.list-item {
+  padding: 6px 0;
+}
+.list-item > img {
+  width: 12.5px;
+  margin-right: 13px;
+}
+.list-item > a {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #efefef;
+  cursor: pointer;
+}
+.btn-menu {
+  width: 120px;
+  margin: 20px auto;
+}
+.btn-menu > button {
+  width: 120px;
+  height: 23px;
+  background: #f7b633;
+  border: none;
+  border-radius: 3px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 23px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+}
+@media screen and (min-width: 768px) {
+  .menu-mobile {
+    top: 0;
+    right: 10%;
+    width: auto;
+    height: inherit;
+    background-color: transparent;
+  }
+  .menu-items {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+  }
+  .list-item > a {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    color: #03293c;
+    cursor: pointer;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .header {
+    padding: 0 10%;
+    top: 64px;
+  }
+  .menu-items {
+    gap: 33px;
+  }
+  .list-item > a {
+    cursor: pointer;
+  }
+}

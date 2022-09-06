@@ -1,0 +1,140 @@
+.community {
+  margin-top: 50px;
+}
+.community-title {
+  margin: 0 auto;
+  width: 60%;
+}
+.community-title > h2 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 18px;
+  text-align: center;
+  color: #000000;
+}
+.community-image {
+  margin: 50px auto 20px;
+  width: 310px;
+  height: 241px;
+  border-radius: 15px;
+}
+.community-image > img {
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+  border-radius: 15px;
+}
+.community-text > p {
+  width: 90%;
+  margin: 0 auto;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  display: flex;
+  align-items: flex-end;
+  text-align: center;
+  color: #03293c;
+}
+.community-text > button {
+  display: block;
+  margin: 20px auto 42px;
+  width: 200px;
+  height: 35px;
+  background: #f7b633;
+  border: 1px solid #f7b633;
+  border-radius: 7px;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 23px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+}
+
+@media screen and (min-width: 768px) {
+  .community {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: 300px auto;
+    grid-template-rows: 88px auto;
+    gap: 20px;
+  }
+  .community-title {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    padding: 50px 0;
+    margin: 0;
+    width: 100%;
+  }
+  .community-title > h2 {
+    font-size: 24px;
+    line-height: 28px;
+    text-align: left;
+  }
+  .community-text {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  .community-text > p {
+    padding: 25px 0;
+    font-size: 13px;
+    line-height: 15px;
+    text-align: left;
+    width: 100%;
+  }
+  .community-text > button {
+    width: 220px;
+    height: 40px;
+    margin: 0;
+  }
+  .community-image {
+    width: 95%;
+    grid-column: 1/2;
+    grid-row: 1/3;
+    align-self: center;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .community {
+    margin-top: 150px;
+    grid-template-columns: 440px auto;
+    grid-template-rows: 88px auto;
+    gap: 42px;
+  }
+  .community-title > h2 {
+    font-size: 42px;
+    line-height: 48px;
+    text-align: left;
+  }
+  .community-text {
+    margin: 40px 0;
+  }
+  .community-text > p {
+    padding: 25px 0;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: left;
+    width: 100%;
+  }
+  .community-text > button {
+    width: 250px;
+    height: 47px;
+    margin: 30px 0;
+  }
+  .community-image {
+    width: 440px;
+    height: 408px;
+    margin: 30px auto;
+  }
+}

@@ -1,0 +1,122 @@
+.skills {
+  padding: 60px 0;
+}
+.skills-title {
+  width: 60%;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+.skills-title > h2 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 20px;
+  text-align: center;
+  color: #03293c;
+}
+.skills-slider {
+  margin-top: 34px;
+}
+.skill > img {
+  width: 165px;
+  height: 165px;
+  padding-bottom: 10px;
+  margin: 0 auto;
+}
+.skill > h3 {
+  padding: 5px 0;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.015em;
+  color: #03293c;
+}
+.skill > p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  color: #03293c;
+}
+.slick-dots {
+  bottom: -40px;
+}
+.slick-dots > li {
+  width: 10px;
+  height: 10px;
+  margin: 0 12px;
+  background: rgba(173, 173, 173, 0.5);
+  border-radius: 50%;
+}
+.slick-dots > li.slick-active {
+  background: #e84e18;
+}
+.slick-dots > li > button:before {
+  content: "";
+}
+@media screen and (min-width: 768px) {
+  .skills {
+    margin-top: 50px;
+  }
+  .skills-title > h2 {
+    font-size: 28px;
+    line-height: 32px;
+  }
+  .skills-desktop {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .skills-desktop > .line {
+    width: 67px;
+    height: 6px;
+    object-fit: cover;
+    transform: translateY(-20px);
+  }
+  .skill > h3 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .skill > p {
+    font-size: 15px;
+    line-height: 18px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .skills {
+    margin-top: 100px;
+  }
+  .skills-title {
+    width: 60%;
+  }
+  .skills-title > h2 {
+    font-size: 42px;
+    line-height: 48px;
+  }
+  .skills-desktop {
+    width: 80%;
+    margin-top: 100px;
+  }
+  .skills-desktop > .line {
+    width: 97px;
+    transform: translateY(-20px);
+  }
+  .skill > h3 {
+    font-size: 26px;
+    line-height: 28px;
+  }
+  .skill > p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
