@@ -7,6 +7,8 @@ import netOne from "../../Assets/image-net-one.png";
 import netTwo from "../../Assets/image-net-two.png";
 import netThree from "../../Assets/image-net-three.png";
 import netFour from "../../Assets/image-net-four.png";
+import kame from '../../Assets/8.png'
+import { Link } from "react-scroll";
 
 const Footer = () => {
   const mobile = window.innerWidth < 768 ? true : false;
@@ -30,16 +32,13 @@ const Footer = () => {
         <div className="footer-bottom-menu">
           <ul>
             <li>
-              <a href="#about">About</a>
+              <Link activeClass="active" to="about" smooth={true}>About</Link>
             </li>
             <li>
-              <a href="#proyects">Proyects</a>
+              <Link activeClass="active" to="services" smooth={true}>Services</Link>
             </li>
             <li>
-              <a href="#services">Services</a>
-            </li>
-            <li>
-              <a href="#contact">Contact</a>
+              <Link activeClass="active" to="contact" smooth={true}>Contact</Link>
             </li>
           </ul>
         </div>
@@ -76,6 +75,10 @@ const Footer = () => {
             </div>
           ) : null}
         </div>
+          <div className="designed">
+            ©2022 - Diseñado por Agencia Kame
+            <img src={kame} alt='kame'/>
+          </div>
       </div>
     </section>
   );

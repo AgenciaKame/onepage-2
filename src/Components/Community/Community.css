@@ -107,10 +107,11 @@
 
 @media screen and (min-width: 1024px) {
   .community {
-    margin-top: 150px;
+    margin-top: 40px;
+    width: 80%;
     grid-template-columns: 440px auto;
     grid-template-rows: 88px auto;
-    gap: 42px;
+    gap: 42px 70px;
   }
   .community-title > h2 {
     font-size: 42px;
@@ -125,7 +126,8 @@
     font-size: 16px;
     line-height: 20px;
     text-align: left;
-    width: 100%;
+    width: 90%;
+    margin: 0;
   }
   .community-text > button {
     width: 250px;

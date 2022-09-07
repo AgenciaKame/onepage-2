@@ -1,6 +1,7 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from "swiper";
+import { Pagination, Navigation } from "swiper";
 import "swiper/css";
+import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "./Testimony.css";
 
@@ -14,10 +15,11 @@ const Testimony = () => {
         slidesPerView={1}
         spaceBetween={30}
         loop={true}
+        navigation={true}
         pagination={{
           clickable: true,
         }}
-        modules={[Pagination]}
+        modules={[Pagination, Navigation]}
         className="testimony-slider"
       >
         <SwiperSlide>
