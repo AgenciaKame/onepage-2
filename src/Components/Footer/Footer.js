@@ -7,7 +7,7 @@ import netOne from "../../Assets/image-net-one.png";
 import netTwo from "../../Assets/image-net-two.png";
 import netThree from "../../Assets/image-net-three.png";
 import netFour from "../../Assets/image-net-four.png";
-import kame from '../../Assets/8.png'
+import kame from "../../Assets/8.png";
 import { Link } from "react-scroll";
 
 const Footer = () => {
@@ -32,13 +32,19 @@ const Footer = () => {
         <div className="footer-bottom-menu">
           <ul>
             <li>
-              <Link activeClass="active" to="about" smooth={true}>About</Link>
+              <Link activeClass="active" to="about" smooth={true}>
+                About
+              </Link>
             </li>
             <li>
-              <Link activeClass="active" to="services" smooth={true}>Services</Link>
+              <Link activeClass="active" to="services" smooth={true}>
+                Services
+              </Link>
             </li>
             <li>
-              <Link activeClass="active" to="contact" smooth={true}>Contact</Link>
+              <Link activeClass="active" to="contact" smooth={true}>
+                Contact
+              </Link>
             </li>
           </ul>
         </div>
@@ -46,39 +52,39 @@ const Footer = () => {
           <p>Follow me</p>
           <ul>
             <li>
-              <img src={facebook} alt="facebook" />
+              <img src={facebook} alt="facebook" loading="lazy"/>
             </li>
             <li>
-              <img src={instagram} alt="imstagram" />
+              <img src={instagram} alt="imstagram" loading="lazy"/>
             </li>
             <li>
-              <img src={linkedin} alt="linkedin" />
+              <img src={linkedin} alt="linkedin" loading="lazy"/>
             </li>
           </ul>
           {mobile === false ? (
             <div className="networks-grid">
               <div className="main-image">
-                <img src={netMain} alt="media" />
+                <img src={netMain} alt="media" loading="lazy"/>
               </div>
               <div className="image">
-                <img src={netOne} alt="media" />
+                <img src={netOne} alt="media" loading="lazy"/>
               </div>
               <div className="image">
-                <img src={netTwo} alt="media" />
+                <img src={netTwo} alt="media" loading="lazy"/>
               </div>
               <div className="image">
-                <img src={netThree} alt="media" />
+                <img src={netThree} alt="media" loading="lazy"/>
               </div>
               <div className="image">
-                <img src={netFour} alt="media" />
+                <img src={netFour} alt="media" loading="lazy"/>
               </div>
             </div>
           ) : null}
         </div>
-          <div className="designed">
-            ©2022 - Diseñado por Agencia Kame
-            <img src={kame} alt='kame'/>
-          </div>
+        <div className="designed">
+          ©2022 - Diseñado por Agencia Kame
+          <img src={kame} alt="kame" />
+        </div>
       </div>
     </section>
   );

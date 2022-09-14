@@ -9,7 +9,7 @@ const Community = () => {
         <h2>Heading goes here about your community or offer</h2>
       </div>
       <div className="community-image">
-        <img src={community} alt="community-img" />
+        <img src={community} alt="community-img" loading="lazy"/>
       </div>
       <div className="community-text">
         {mobile === true ? (

@@ -238,6 +238,7 @@
     object-fit: cover;
   }
   .footer-bottom > .designed {
+    width: 90%;
     justify-content: right;
   }
 }
@@ -316,10 +317,10 @@
     height: 86px;
   }
   .footer-bottom > .designed {
-    width: 70%;
-    bottom: 100px;
-    font-size: 20px;
-    line-height: 23px;
+    width: 90%;
+    bottom: 50px;
+    font-size: 16px;
+    line-height: 20px;
   }
   .footer-bottom > .designed > img {
     width: 25px;
