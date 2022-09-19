@@ -8,7 +8,7 @@ import Footer from './Components/Footer/Footer';
 import Testimony from './Components/Testimony/Testimony';
 import Offer from './Components/Offer/Offer';
 
-function App() {
+const App = () => {
   return (
     <>
       <Home />

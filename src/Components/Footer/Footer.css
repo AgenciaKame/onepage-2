@@ -105,6 +105,7 @@
   font-size: 12px;
   line-height: 23px;
   color: #ffffff;
+  cursor: pointer;
 }
 .footer-bottom-networks {
   position: absolute;
@@ -207,6 +208,7 @@
   }
   .footer-bottom-networks > ul > li > a {
     padding: 10px 0;
+    cursor: pointer;
   }
   .footer-bottom-networks > .networks-grid {
     position: absolute;
@@ -223,19 +225,27 @@
     width: 132px;
     height: 136px;
   }
-  .footer-bottom-networks > .networks-grid > .main-image > img {
+  .footer-bottom-networks > .networks-grid > .main-image > a {
     width: inherit;
     height: inherit;
-    object-fit: cover;
+  }
+  .footer-bottom-networks > .networks-grid > .main-image > a > img {
+    width: inherit;
+    height: inherit;
+    object-fit: contain;
   }
   .footer-bottom-networks > .networks-grid > .image {
     width: 68px;
     height: 66px;
   }
-  .footer-bottom-networks > .networks-grid > .image > img {
+  .footer-bottom-networks > .networks-grid > .image > a {
     width: inherit;
     height: inherit;
-    object-fit: cover;
+  }
+  .footer-bottom-networks > .networks-grid > .image > a > img {
+    width: inherit;
+    height: inherit;
+    object-fit: contain;
   }
   .footer-bottom > .designed {
     width: 90%;

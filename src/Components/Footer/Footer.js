@@ -9,8 +9,28 @@ import netThree from "../../Assets/image-net-three.png";
 import netFour from "../../Assets/image-net-four.png";
 import kame from "../../Assets/8.png";
 import { Link } from "react-scroll";
+import { useState } from "react";
+import { useEffect } from "react";
 
 const Footer = () => {
+  const [isLoading, setIsLoading] = useState(true);
+  const [images, setImages] = useState([]);
+  useEffect((images) => {
+    const url = `https://graph.instagram.com/me/media?fields=id,caption,media_url,timestamp,media_type,permalink,thumbnail_url&access_token=${process.env.REACT_APP_TOKEN}`;
+    setImages([]);
+    setTimeout(() => {
+      fetch(url)
+        .then((res) => res.json())
+        .then((json) => {
+          let posts = json.data;
+          for (let i = 0; i < posts.length; i++) {
+            setImages((images) => [...images, posts[i].media_url]);
+          }
+          setIsLoading(false);
+        });
+    }, 100);
+  }, []);
+
   const mobile = window.innerWidth < 768 ? true : false;
   return (
     <section className="footer">
@@ -52,32 +72,67 @@ const Footer = () => {
           <p>Follow me</p>
           <ul>
             <li>
-              <img src={facebook} alt="facebook" loading="lazy"/>
+              <a href="https://www.instagram.com/agenciakame/" target='__blank'>
+                <img src={facebook} alt="facebook" loading="lazy" />
+              </a>
             </li>
             <li>
-              <img src={instagram} alt="imstagram" loading="lazy"/>
+              <a href="https://www.instagram.com/agenciakame/" target='__blank'>
+                <img src={instagram} alt="imstagram" loading="lazy" />
+              </a>
             </li>
             <li>
-              <img src={linkedin} alt="linkedin" loading="lazy"/>
+              <a href="https://www.linkedin.com/company/agencia-kame/" target='__blank'>
+                <img src={linkedin} alt="linkedin" loading="lazy" />
+              </a>
             </li>
           </ul>
           {mobile === false ? (
             <div className="networks-grid">
-              <div className="main-image">
-                <img src={netMain} alt="media" loading="lazy"/>
-              </div>
-              <div className="image">
-                <img src={netOne} alt="media" loading="lazy"/>
-              </div>
-              <div className="image">
-                <img src={netTwo} alt="media" loading="lazy"/>
-              </div>
-              <div className="image">
-                <img src={netThree} alt="media" loading="lazy"/>
-              </div>
-              <div className="image">
-                <img src={netFour} alt="media" loading="lazy"/>
-              </div>
+              {isLoading === true ? (
+                <>
+                  <div className="main-image">
+                    <a href="https://www.instagram.com/agenciakame/" target='__blank'>
+                      <img src={netMain} alt="media" loading="lazy" />
+                    </a>
+                  </div>
+                  <div className="image">
+                    <a href="https://www.instagram.com/agenciakame/" target='__blank'>
+                      <img src={netOne} alt="media" loading="lazy" />
+                    </a>
+                  </div>
+                  <div className="image">
+                    <a href="https://www.instagram.com/agenciakame/" target='__blank'>
+                      <img src={netTwo} alt="media" loading="lazy" />
+                    </a>
+                  </div>
+                  <div className="image">
+                    <a href="https://www.instagram.com/agenciakame/" target='__blank'>
+                      <img src={netThree} alt="media" loading="lazy" />
+                    </a>
+                  </div>
+                  <div className="image">
+                    <a href="https://www.instagram.com/agenciakame/" target='__blank'>
+                      <img src={netFour} alt="media" loading="lazy" />
+                    </a>
+                  </div>
+                </>
+              ) : (
+                <>
+                  {images.map((image, index) => {
+                    return (
+                      <div
+                        key={index}
+                        className={index === 0 ? "main-image" : "image"}
+                      >
+                        <a href="https://www.instagram.com/agenciakame/" target='__blank'>
+                          <img src={image} alt="media" />
+                        </a>
+                      </div>
+                    );
+                  })}
+                </>
+              )}
             </div>
           ) : null}
         </div>
