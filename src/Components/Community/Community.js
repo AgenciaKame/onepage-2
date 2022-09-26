@@ -6,7 +6,7 @@ const Community = () => {
   return (
     <section className="community" id="about">
       <div className="community-title">
-        <h2>Heading goes here about your community or offer</h2>
+        <h2>Te cuento un poco sobre mi</h2>
       </div>
       <div className="community-image">
         <img src={community} alt="community-img" loading="lazy"/>
@@ -29,7 +29,7 @@ const Community = () => {
             similique nemo in repellendus, quibusdam possimus nam amet.
           </p>
         )}
-        <button>Join my free community</button>
+        <button>Contáctame</button>
       </div>
     </section>
   );

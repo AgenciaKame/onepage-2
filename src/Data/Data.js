@@ -6,18 +6,18 @@ import lineDivisor from '../Assets/skills-line-divisor.png'
 export const skills = [
   {
     image: skillOne,
-    title: 'Skill One',
-    text: 'Short description',
+    title: 'Ansiedad',
+    text: 'Pequeña descripción',
   },
   {
     image: skillTwo,
-    title: 'Skill Two',
-    text: 'Short description',
+    title: 'Orientación Vocacional',
+    text: 'Pequeña descripción',
   },
   {
     image: skillThree,
-    title: 'Skill Three',
-    text: 'Short description',
+    title: 'Niños y adolescentes',
+    text: 'Pequeña descripción',
   },
 ]
 export const skillDivisors = [

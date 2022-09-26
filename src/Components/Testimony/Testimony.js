@@ -24,7 +24,7 @@ const Testimony = () => {
       >
         <SwiperSlide>
           <div className="testimony-box">
-            <h2>People Say 1</h2>
+            <h2>Me sentí escuchada</h2>
             <p>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis
               iure mollitia ex beatae voluptas voluptatum eligendi enim totam
@@ -36,7 +36,7 @@ const Testimony = () => {
         </SwiperSlide>
         <SwiperSlide>
           <div className="testimony-box">
-            <h2>People Say 2</h2>
+            <h2>Realmente se adaptó a mi</h2>
             <p>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis
               iure mollitia ex beatae voluptas voluptatum eligendi enim totam
@@ -48,7 +48,7 @@ const Testimony = () => {
         </SwiperSlide>
         <SwiperSlide>
           <div className="testimony-box">
-            <h2>People Say 3</h2>
+            <h2>Llegó en el momento indicado</h2>
             <p>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis
               iure mollitia ex beatae voluptas voluptatum eligendi enim totam

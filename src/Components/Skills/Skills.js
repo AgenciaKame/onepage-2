@@ -17,7 +17,7 @@ const Skills = () => {
   return (
     <div className="skills">
       <div className="skills-title">
-        <h2>You must indicate what your profession is or what you do</h2>
+        <h2>Me especializo en</h2>
       </div>
       {mobile === true ? (
         <div className="skills-slider">

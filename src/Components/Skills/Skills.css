@@ -18,6 +18,12 @@
 .skills-slider {
   margin-top: 34px;
 }
+.skill {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
 .skill > img {
   width: 165px;
   height: 165px;
@@ -34,6 +40,8 @@
   text-align: center;
   letter-spacing: 0.015em;
   color: #03293c;
+  width: 70%;
+  margin: 0 auto;
 }
 .skill > p {
   font-family: "Inter";
@@ -72,8 +80,8 @@
     width: 90%;
     margin: 0 auto;
     margin-top: 50px;
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 1fr 80px 1fr 80px 1fr;
     align-items: center;
   }
   .skills-desktop > .line {
@@ -104,7 +112,7 @@
     line-height: 48px;
   }
   .skills-desktop {
-    width: 80%;
+    width: 90%;
     margin-top: 100px;
   }
   .skills-desktop > .line {
@@ -119,4 +127,32 @@
     font-size: 16px;
     line-height: 24px;
   }
+}
+@media screen and (min-width: 1280px) {
+  .skills {
+    margin-top: 100px;
+  }
+  .skills-title {
+    width: 60%;
+  }
+  .skills-title > h2 {
+    font-size: 42px;
+    line-height: 48px;
+  }
+  .skills-desktop {
+    width: 80%;
+    margin-top: 100px;
+  }
+  .skills-desktop > .line {
+    width: 97px;
+    transform: translateY(-20px);
+  }
+  .skill > h3 {
+    font-size: 26px;
+    line-height: 28px;
+  }
+  .skill > p {
+    font-size: 16px;
+    line-height: 24px;
+  } 
 }
