@@ -19,7 +19,7 @@ const Home = () => {
       </div>
       <div className="right-h">
         <div className="home-text">
-          <h2>Your headline goes here</h2>
+          <h2>Es tu momento de sanar</h2>
           {mobile === false ? (
             <p>
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis
@@ -29,7 +29,7 @@ const Home = () => {
           ) : null}
         </div>
         <div className="home-link">
-          <button>Acount Analyst</button>
+          <button>Psicóloga</button>
         </div>
       </div>
     </div>
