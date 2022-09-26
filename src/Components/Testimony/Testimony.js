@@ -31,7 +31,7 @@ const Testimony = () => {
               possimus, exercitationem asperiores accusamus ullam, atque in?
               Facere aliquam vel repellat consequuntur porro harum rem velit.
             </p>
-            <h3>Gregory Brown</h3>
+            <h3>Florencia Marín</h3>
           </div>
         </SwiperSlide>
         <SwiperSlide>
@@ -43,7 +43,7 @@ const Testimony = () => {
               possimus, exercitationem asperiores accusamus ullam, atque in?
               Facere aliquam vel repellat consequuntur porro harum rem velit.
             </p>
-            <h3>Gregory Brown</h3>
+            <h3>Victor Herrera</h3>
           </div>
         </SwiperSlide>
         <SwiperSlide>
@@ -55,7 +55,7 @@ const Testimony = () => {
               possimus, exercitationem asperiores accusamus ullam, atque in?
               Facere aliquam vel repellat consequuntur porro harum rem velit.
             </p>
-            <h3>Gregory Brown</h3>
+            <h3>Marc González</h3>
           </div>
         </SwiperSlide>
       </Swiper>
